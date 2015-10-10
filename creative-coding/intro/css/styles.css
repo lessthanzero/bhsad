@@ -1,0 +1,68 @@
+/* basic usage of font-face */
+@font-face {
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+* {
+  font-family: "Bitstream Vera Serif Bold", Helvetica, Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+}
+
+h1
+.b-holder {
+  float: left;
+  /*margin: 0!important;*/
+  /*padding: 0!important;*/
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  padding: 8px 16px;
+  transition: color 0.75s ease-in-out;
+  display: inline-block;
+  background-color: yellow;
+  width: 30%;
+}
+h1:hover {
+  color: #f00;
+}
+/* Постарайтесь разобраться, как это работает */
+h1::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #f00;
+  margin: 10px;
+}
+
+.b-holder {
+  width: 70%;
+  font-size: 32px;
+  display: inline-block;
+}
+
+p {font-size: 0.5em;line-height: 1.45;/*padding: 0.5em 1em;*/padding: 8px 16px;
+}
+
+a {
+  color: #bada55;
+}
+
+a:visited,
+a:hover
+{
+  color: #282828;
+}
+
+img {
+  width: 500px;
+}
